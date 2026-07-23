@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+}
+td{
+    border: 2px solid black;
+}
+th{
+    border: 2px solid black;
+}
+table{
+    border: 2px solid black;
+}

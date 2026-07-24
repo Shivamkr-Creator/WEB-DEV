@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form --Lets learn it</title>
+</head>
+
+<body>
+    <h1>Form for Student </h1>
+    <!-- form creation -->
+    <form action="post">
+        <!-- taking text input -->
+        <div>
+            <label for="username">Enter your name</label>
+            <input type="text" id="username" name="username" placeholder="Enter username">
+        </div>
+        <!-- taking choice input -->
+        <div>
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">female</label>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">male</label>
+        </div>
+        <!-- taking checkbox input -->
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+              <label for="subscribe">subscribe for newslater</label>
+        </div>
+        <!-- taking feedback input -->
+        <div>
+            <label for="comment">write your feedback --</label>
+            <textarea name="comment" id="comment" rows="10" cols="25"></textarea>
+        </div>
+        <!-- use of select tag to take input in form-->
+        <div>
+            <select name="fruite" id="fruite">
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="mango">mango</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

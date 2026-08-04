@@ -1,0 +1,7 @@
+div{
+    background-color: aqua;
+}
+div :first-child{
+    color: red;
+    background-color: yellow;
+}

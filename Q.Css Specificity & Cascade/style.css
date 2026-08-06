@@ -1,0 +1,38 @@
+* {
+            color: greenyellow;
+            background-color: green;
+        }
+
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+        /* The specificity of this selector is 10  */
+        .yellow {
+            color: yellow;
+        }
+        /* The specificity of this selector is 1+10=11  */
+        h1.yellow {
+            color: rgb(244, 17, 176);
+        }
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+        /* The specificity of this selector is 10  */
+        [data-x=a] {
+            background-color: rgb(224, 215, 215);
+        }
+        /* The specificity of this selector is 100  */
+        #h1 {
+            color: honeydew;
+        }
+
+        .imp {
+            color: brown !important;
+        }

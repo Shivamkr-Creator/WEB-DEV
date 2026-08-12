@@ -1,0 +1,51 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            /* width: 2048px; */
+            border: 2px solid black;
+            /*view port width */
+            width: 80vw;
+            /* view port height(%)*/
+            height: 10vh;
+            /* auto add margin if its a block element */
+            margin: 23px auto;
+            background-color: aqua;
+
+        }
+        .container {
+            box-sizing: border-box;
+            /* width: 2048px; */
+            border: 2px solid black;
+            /*view port width(%) */
+            width: 80vw;
+            /*min view port height(%)*/
+            /* height: 80vh; */
+            /*min view port height(%)*/
+            min-height: 80vh;
+            /* auto add margin if its a block element */
+            margin: 23px auto;
+            font-size: 12px;
+            background-color: aqua;
+        }
+        .container p{
+            /* inherited font size mul 2 */
+            font-size: 2em;
+            border: 2px solid black;
+            /* root font size mul 2 */
+            font-size: 2rem;
+            width: 50%;
+        }
+        /* vmin and vmax */
+        .an{
+            box-sizing: border-box;
+            border: 2px solid black;
+            color: green;
+            font-size: 22px;
+            margin: 23px auto;
+            /* width: 100vmin; */
+            width: 80vw;
+        }

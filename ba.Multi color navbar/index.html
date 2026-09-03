@@ -6,34 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mul color navbar</title>
     <style>
-        :root{
-            --primary-color:rgb(9, 243, 9);
-
+        *{
+            margin: 0;
+            padding: 0;
         }
-        nav{
-            padding: 15px;
+        :root {
+            --primary-color: rgb(56, 38, 248);
+            --text-color:white;
+            --secondary-color:rgb(131, 120, 253);
         }
-        ul{
-            display: flex;
-            list-style: none;
+        /* :root {
+            --primary-color: rgb(9, 243, 9);
+            --text-color:white;
+            --secondary-color:rgb(146, 253, 146);
+        } */
+        body{
+            background-color: var(--secondary-color);
+        }
+        nav {
+            padding: 12px 0px;
             background-color: var(--primary-color);
         }
-        li{
-            margin: 3px;
+
+        ul li{
+            display: inline;
+            list-style: none;
+            padding: 23px;
+        }
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 22px;
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class="HOD">WELCOME</div>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Service</a></li>
-            <li><a href="/">contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Service</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column;
+            flex-direction: column-reverse;  */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap;
+            align-content: start;
+            /* there are no any justify item in flexbox */
+            flex-flow: row wrap;
+            /* row-gap: 30px;
+            column-gap: 10px; */
+            gap: 30px 10px;
+        }
+
+        .item {
+            flex-grow: 1;
+            height: 99px;
+            width: 99px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+        }
+
+        .item1 {
+            /* flex-grow: 2;*/
+            /*flex-shrink: 2; */
+            align-self: end;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-1 item1">1</div>
+            <div class="item order-2">2</div>
+            <div class="item order-3">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item order-1">100</div>
+        </div>
+
+    </main>
+</body>
+
+</html>

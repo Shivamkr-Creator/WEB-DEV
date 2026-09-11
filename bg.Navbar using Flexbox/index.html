@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar using Flexbox</title>
+    <style>
+        nav {
+            margin: 20px;
+            padding: 0px 15px;
+            display:flex;
+            justify-content: start;
+            align-items: center;
+            border: 1px solid black;
+            background-color: aliceblue;
+        }
+        .right ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 34px;
+        }
+
+    </style>
 </head>
+
 <body>
     <header>
         <nav>
-            
+            <div class="logo">
+                <img src="logo.svg" alt="Logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products</li>
+                    <li>Buy</li>
+                    <li>Renew</li>
+                    <li>Support</li>
+                    <li>Learn</li>
+                    <li>Company</li>
+                    <li><button >Download</button></li>
+                </ul>
+            </div>
         </nav>
     </header>
 </body>
+
 </html>

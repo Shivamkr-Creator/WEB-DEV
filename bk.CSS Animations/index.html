@@ -8,14 +8,21 @@
         .container {
             height: 80vh;
             width: 30vw;
+            background-color: black;
         }
         .box {
             width: 100px;
             height: 100px;
             background-color: #3498db;
-            animation-name: shivamkaanimation;
-            animation-duration: 3s;
-            animation-iteration-count: 3;
+            /* animation-name: shivamkaanimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            animation-play-state: paused; */
+            animation: shivamkaanimation 2s ease-in-out 3s 1,
+           shivam2 3s ease-in-out 3s 1;
         }
         @keyframes shivamkaanimation {
             from {
@@ -23,6 +30,32 @@
             }
             to{
                 transform: translateX(1000px);
+            }
+        }
+         @keyframes shivamkaanimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow; 
+            }
+        }
+
+        @keyframes shivam2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
             }
         }
     </style>

@@ -49,11 +49,49 @@ nav {
     text-align: center;
 }
 
-.first div button {
+.btn {
     background-color: aqua;
     padding: 6px;
+    margin: 10px 0px;
     border: none;
     color: white;
     font-weight: 800;
     border-radius: 6px;
+}
+
+.small{
+    font-size: 12px;
+    margin: 4px;
+}
+.green{
+    background-color: rgb(81, 213, 81);
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.second{
+    max-width: 63vw;
+    margin: auto;
+}
+.item{
+    padding: 23px;
+    background-color: rgba(237, 235, 235, 0.948);
+    border-radius: 12px;
+    text-align: center;
+}
+.item-lang{
+    padding-bottom: 34px;
+    text-align: center;
+    font-weight: 800;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+.big{
+        font-size: 20px;
+    font-weight: 700;
 }

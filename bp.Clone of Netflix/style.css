@@ -89,7 +89,10 @@ nav button {
 .btn{
     padding: 3px 8px;
     font-weight: bold;
-    background-color: white;
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(23,23,23,0.7);
+    border-radius: 4px;
 }
 
 .red-btn-sm{
@@ -100,14 +103,63 @@ nav button {
 .red-btn{
     background-color: red;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     padding: 3px 18px;
     border-radius: 4px;
 }
 
 .main input{
-    font-size: 16px;
-    padding: 3px 18px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 7px 15px 7px 14px;
     border-radius: 4px;
-    background-color: rgb(23,23,23,0.2);
+    color: white;
+    background-color: rgb(23,23,23,0.7);
+}
+
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.tv{
+    position: relative;
+}
+
+.tv img{
+    width: 30vw;
+    position: relative;
+    z-index: 1;
+}
+
+.tv video{
+    position: absolute;
+    top: 17%;
+    left: 13%;
+    width: 73%;
+    height: 62%;
+}
+.first :first-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.first div :nth-child(1){
+    font-size: 32px;
+    font-weight: 900;
+}
+.first div :nth-child(2){
+    font-size: 20px;
 }

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/bg.jpg);
+    background-position: center center;
+    /* background-size: max(1200px, 100vw); */
+    min-height: 70vh;
+    height: auto;
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    min-height: 70vh;
+    height: 100%;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+}
+
+nav img {
+    width: 114px;
+    z-index: 10;
+    position: relative;
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+}
+
+.hero {
+    min-height: calc(70vh - 62px);
+    height: 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.hero> :nth-child(1) {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.seperation{
+    height: 7px;
+    background-color: rgb(87, 87, 87);
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.red-btn-sm{
+    background-color: red;
+    color: white;
+}
+
+.red-btn{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 3px 18px;
+    border-radius: 4px;
+}
+
+.main input{
+    font-size: 16px;
+    padding: 3px 18px;
+    border-radius: 4px;
+    background-color: rgb(23,23,23,0.2);
+}

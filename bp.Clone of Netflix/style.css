@@ -81,26 +81,26 @@ nav button {
     text-align: center;
 }
 
-.seperation{
+.seperation {
     height: 7px;
     background-color: rgb(87, 87, 87);
 }
 
-.btn{
+.btn {
     padding: 3px 8px;
     font-weight: bold;
     color: white;
     border: 1px solid white;
-    background-color: rgb(23,23,23,0.7);
+    background-color: rgb(23, 23, 23, 0.7);
     border-radius: 4px;
 }
 
-.red-btn-sm{
+.red-btn-sm {
     background-color: red;
     color: white;
 }
 
-.red-btn{
+.red-btn {
     background-color: red;
     color: white;
     font-size: 18px;
@@ -108,23 +108,23 @@ nav button {
     border-radius: 4px;
 }
 
-.main input{
+.main input {
     font-size: 12px;
     font-weight: 400;
     padding: 7px 15px 7px 14px;
     border-radius: 4px;
     color: white;
-    background-color: rgb(23,23,23,0.7);
+    background-color: rgb(23, 23, 23, 0.7);
 }
 
-.hero-btn{
+.hero-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 13px;
 }
 
-.first{
+.first {
     display: flex;
     justify-content: center;
     max-width: 70vw;
@@ -134,32 +134,77 @@ nav button {
     gap: 20px;
 }
 
-.tv{
+.tv {
     position: relative;
 }
 
-.tv img{
+.tv img {
     width: 30vw;
     position: relative;
     z-index: 1;
 }
 
-.tv video{
+.tv video {
     position: absolute;
     top: 17%;
     left: 13%;
     width: 73%;
     height: 62%;
 }
-.first :first-child{
+
+.first :first-child {
     display: flex;
     flex-direction: column;
 }
 
-.first div :nth-child(1){
+.first div :nth-child(1) {
     font-size: 32px;
     font-weight: 900;
 }
-.first div :nth-child(2){
+
+.first div :nth-child(2) {
     font-size: 20px;
+}
+
+.faq {
+    color: white;
+}
+
+.faq h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 48px;
+}
+
+.faqbox {
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d;
+    justify-content: space-between;
+    border: 2px solid white;
+    margin: 34px auto;
+    padding: 24px;
+    max-width: 60vw;
+    font-size: 20px;
+}
+
+footer {
+    color: white;
+    margin: 81px;
+    max-width: 70vw;
+    padding: 0 180px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-item a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 36px;
 }

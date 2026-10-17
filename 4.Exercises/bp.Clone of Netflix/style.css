@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(23, 23, 23);
 }
 
 .main {
@@ -202,7 +202,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.footer-item a{
+.footer-item a {
     color: white;
     display: flex;
     flex-direction: column;

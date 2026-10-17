@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar using Flexbox</title>
+    <title>UltraEdit</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="background">
             <div class="logo">
                 <img src="logo.svg" alt="Logo">
             </div>
@@ -27,13 +28,15 @@
                 <button>Download</button>
                 <button>English</button>
                 <button>search</button>
+                <button id="modeBtn" style="border-radius: 15px;">🌙</button>
             </div>
         </nav>
     </header>
     <main>
         <section class="first">
             <span>Download <b>UltraEdit</b> for Windows</span>
-            <p> Download and try UltraEdit before you buy it! This download includes the full Windows version of the Ultra Edits</p>
+            <p> Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+                Ultra Edits</p>
             <div>
                 <button class="btn">
                     Download for Windows Mac or Linux
@@ -43,45 +46,45 @@
         <section class="second">
             <div class="flex">
                 <span class="big">Download UltraEdits </span>
-                <span class="small">            latest version</span>
+                <span class="small"> latest version</span>
             </div>
             <div class="grid">
-                <div class="item">
+                <div class="item background">
                     <div class="item-lang">English
 
                     </div>
                     <button class="btn blue">Download 32 bit</button>
                     <button class="btn green">Download 62 bit</button>
                 </div>
-                <div class="item">
+                <div class="item background">
                     <div class="item-lang">English
 
                     </div>
                     <button class="btn blue">Download 32 bit</button>
                     <button class="btn green">Download 62 bit</button>
                 </div>
-                <div class="item">
+                <div class="item background">
                     <div class="item-lang">English
 
                     </div>
                     <button class="btn blue">Download 32 bit</button>
                     <button class="btn green">Download 62 bit</button>
                 </div>
-                <div class="item">
+                <div class="item background">
                     <div class="item-lang">English
 
                     </div>
                     <button class="btn blue">Download 32 bit</button>
                     <button class="btn green">Download 62 bit</button>
                 </div>
-                <div class="item">
+                <div class="item background">
                     <div class="item-lang">English
 
                     </div>
                     <button class="btn blue">Download 32 bit</button>
                     <button class="btn green">Download 62 bit</button>
                 </div>
-                <div class="item">
+                <div class="item background">
                     <div class="item-lang">English
 
                     </div>
@@ -91,5 +94,26 @@
             </div>
         </section>
     </main>
+    <script>
+        const btn = document.getElementById("modeBtn");
+        btn.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+
+            // change button text
+            if (document.body.classList.contains("dark")) {
+                btn.innerText = "☀️";
+            } else {
+                btn.innerText = "🌙";
+            }
+        });
+        // save mode
+        localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+
+        // on load
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark");
+        }
+    </script>
 </body>
+
 </html>

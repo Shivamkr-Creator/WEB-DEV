@@ -13,6 +13,7 @@ let s = prompt("Enter a String to Mirror: ");
 function mStr(str) {
     let reversedStr = str.split('').reverse('').join("");
     return str + reversedStr;
+    // return reversedStr;
 }
 
-console.log(mStr(s));
+console.log("Mirrored String: " + mStr(s));

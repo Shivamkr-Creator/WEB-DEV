@@ -1,0 +1,43 @@
+/* utility classes */
+.border{
+    border: 1px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.bg-gray{
+    background-color: #121212;
+    color: white;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+.m5{
+    margin: 5px;
+}
+
+.p10{
+    padding: 10px;
+}

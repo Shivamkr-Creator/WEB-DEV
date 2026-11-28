@@ -41,3 +41,15 @@
 .p10{
     padding: 10px;
 }
+
+::-webkit-scrollbar-thumb {
+  background: #4a90e2;   /* your accent color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6aa8f0;
+}
+
+* {
+  scrollbar-color: #4a90e2 #1a1a1a;
+}
